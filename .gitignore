@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.tools/
+config.json
+run_email_test.sh
+.DS_Store

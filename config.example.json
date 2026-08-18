@@ -1,0 +1,28 @@
+{
+  "url": "https://turniere.ringerdb.de/api/v1/turniere/all/2027?zeitbereich=Turnierkalender",
+  "page_url": "https://turniere.ringerdb.de/zukunft",
+  "name": "ringerdb",
+  "output_dir": "runs",
+  "retention_count": 2,
+  "compare": "api",
+  "verify_ssl": true,
+  "detail_api_url": "https://turniere.ringerdb.de/api/v1/turniere/{id}/altersklassen?mitGewichtsklasse",
+  "registration_url_template": "https://ringen.liga-db.de/de/Turniere/Detail/{id}",
+  "columns": [
+    "datumAb",
+    "datumBis",
+    "turnierbezeichnung",
+    "ort",
+    "ausrichtenderVerein",
+    "veranstalter",
+    "onlineMeldungAb",
+    "onlineMeldungBis",
+    "altersklassen",
+    "stilarten",
+    "anmeldelink"
+  ],
+  "user_agent": "WebsiteWatch/1.0 (+local change monitor)",
+  "ignore_patterns": [
+    "Last updated: .*"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "url": "https://turniere.ringerdb.de/api/v1/turniere/all/2027?zeitbereich=Turnierkalender",
+  "page_url": "https://turniere.ringerdb.de/zukunft",
+  "name": "ringerdb",
+  "output_dir": "runs",
+  "retention_count": 2,
+  "compare": "api",
+  "verify_ssl": false,
+  "detail_api_url": "https://turniere.ringerdb.de/api/v1/turniere/{id}/altersklassen?mitGewichtsklasse",
+  "registration_url_template": "https://ringen.liga-db.de/de/Turniere/Detail/{id}",
+  "columns": [
+    "datumAb",
+    "datumBis",
+    "turnierbezeichnung",
+    "ort",
+    "ausrichtenderVerein",
+    "veranstalter",
+    "onlineMeldungAb",
+    "onlineMeldungBis",
+    "altersklassen",
+    "stilarten",
+    "anmeldelink"
+  ],
+  "email": {
+    "enabled": true,
+    "send_only_on_changes": true,
+    "smtp_host_env": "RINGERDB_SMTP_HOST",
+    "smtp_port_env": "RINGERDB_SMTP_PORT",
+    "smtp_user_env": "RINGERDB_SMTP_USER",
+    "smtp_password_env": "RINGERDB_SMTP_PASSWORD",
+    "from_env": "RINGERDB_EMAIL_FROM",
+    "to_env": "RINGERDB_EMAIL_TO",
+    "subject": "RingerDB Watcher: Aenderungen gefunden",
+    "starttls": true
+  },
+  "user_agent": "WebsiteWatch/1.0 (+GitHub Actions change monitor)",
+  "ignore_patterns": [
+    "Last updated: .*"
+  ]
+}

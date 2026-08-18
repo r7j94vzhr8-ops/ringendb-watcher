@@ -1,0 +1,45 @@
+name: RingerDB Watch
+
+on:
+  schedule:
+    - cron: "0 20 * * *"
+      timezone: "Europe/Berlin"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ringerdb-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run watcher
+        env:
+          RINGERDB_SMTP_HOST: ${{ secrets.RINGERDB_SMTP_HOST }}
+          RINGERDB_SMTP_PORT: ${{ secrets.RINGERDB_SMTP_PORT }}
+          RINGERDB_SMTP_USER: ${{ secrets.RINGERDB_SMTP_USER }}
+          RINGERDB_SMTP_PASSWORD: ${{ secrets.RINGERDB_SMTP_PASSWORD }}
+          RINGERDB_EMAIL_FROM: ${{ secrets.RINGERDB_EMAIL_FROM }}
+          RINGERDB_EMAIL_TO: ${{ secrets.RINGERDB_EMAIL_TO }}
+        run: python website_watch.py --config config.github.json
+
+      - name: Commit snapshots and reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add runs/snapshots runs/reports
+          git diff --cached --quiet || git commit -m "Update RingerDB watcher data"
+          git push
