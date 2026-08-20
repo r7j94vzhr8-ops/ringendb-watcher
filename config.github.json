@@ -30,7 +30,7 @@
     "smtp_password_env": "RINGERDB_SMTP_PASSWORD",
     "from_env": "RINGERDB_EMAIL_FROM",
     "to_env": "RINGERDB_EMAIL_TO",
-    "subject": "RingerDB Watcher: Aenderungen gefunden",
+    "subject": "RingerDB Watcher: Änderungen gefunden",
     "starttls": true
   },
   "user_agent": "WebsiteWatch/1.0 (+GitHub Actions change monitor)",

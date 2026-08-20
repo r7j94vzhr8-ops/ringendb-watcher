@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import difflib
 import email.utils
+import hashlib
 import html
 import json
 import os
@@ -14,10 +15,11 @@ import smtplib
 import ssl
 import sys
 import urllib.request
-from datetime import datetime
+from datetime import datetime, time, timedelta, timezone
 from email.message import EmailMessage
 from html.parser import HTMLParser
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 
 class VisibleTextParser(HTMLParser):
@@ -295,7 +297,7 @@ def write_report(previous: str, current: str, report_path: Path, title: str, url
   <header>
     <h1>{html.escape(title)}</h1>
     <p><a href="{html.escape(url)}">{html.escape(url)}</a></p>
-    <p>Geprueft am {html.escape(now)}</p>
+    <p>Geprüft am {html.escape(now)}</p>
     <div class="summary">
       <div class="pill">Neu: {added}</div>
       <div class="pill">Entfernt: {removed}</div>
@@ -317,16 +319,22 @@ def split_table_rows(snapshot: str) -> list[list[str]]:
 
 def format_table_rows(rows: list[list[str]], status: str) -> str:
     if not rows:
-        return '<p class="empty">Keine Eintraege.</p>'
+        return '<p class="empty">Keine Einträge.</p>'
     column_count = max(len(row) for row in rows)
     header = rows[0] if status == "headered" else []
     data_rows = rows[1:] if status == "headered" else rows
     body = []
     for row in data_rows:
         cells = row + [""] * (column_count - len(row))
+        rendered_cells = []
+        for index, cell in enumerate(cells):
+            label = header[index] if index < len(header) else ""
+            rendered_cells.append(
+                f'<td data-label="{html.escape(label, quote=True)}">{format_cell(cell)}</td>'
+            )
         body.append(
             f'<tr class="{status}">'
-            + "".join(f"<td>{format_cell(cell)}</td>" for cell in cells)
+            + "".join(rendered_cells)
             + "</tr>"
         )
     head = ""
@@ -342,16 +350,176 @@ def format_cell(cell: str) -> str:
     return escaped
 
 
-def write_table_report(previous: str, current: str, report_path: Path, title: str, url: str) -> tuple[int, int]:
+def table_row_key(header: str, line: str) -> str:
+    columns = header.split("\t") if header else []
+    cells = line.split("\t")
+    for key_column in ("id.value", "anmeldelink"):
+        if key_column in columns:
+            index = columns.index(key_column)
+            if index < len(cells) and cells[index].strip():
+                return f"{key_column}:{cells[index].strip()}"
+    fallback_columns = ("datumAb", "turnierbezeichnung", "ort")
+    fallback = []
+    for column in fallback_columns:
+        if column in columns:
+            index = columns.index(column)
+            fallback.append(cells[index].strip() if index < len(cells) else "")
+    return "fallback:" + "|".join(fallback or [line])
+
+
+def get_table_changes(
+    previous: str,
+    current: str,
+) -> tuple[str, list[str], list[tuple[str, str]], list[str]]:
     previous_lines = previous.splitlines()
     current_lines = current.splitlines()
     header = current_lines[0] if current_lines else ""
     previous_data_lines = previous_lines[1:] if previous_lines and previous_lines[0] == header else previous_lines
     current_data_lines = current_lines[1:] if current_lines and current_lines[0] == header else current_lines
-    previous_set = set(previous_data_lines)
-    current_set = set(current_data_lines)
-    added_lines = [line for line in current_data_lines if line not in previous_set]
-    removed_lines = [line for line in previous_data_lines if line not in current_set]
+    previous_by_key = {table_row_key(header, line): line for line in previous_data_lines}
+    current_by_key = {table_row_key(header, line): line for line in current_data_lines}
+    added_lines = [
+        line for line in current_data_lines if table_row_key(header, line) not in previous_by_key
+    ]
+    changed_lines = [
+        (previous_by_key[key], line)
+        for line in current_data_lines
+        if (key := table_row_key(header, line)) in previous_by_key
+        and previous_by_key[key] != line
+    ]
+    removed_lines = [
+        line for line in previous_data_lines if table_row_key(header, line) not in current_by_key
+    ]
+    return header, added_lines, changed_lines, removed_lines
+
+
+def escape_ics(value: str) -> str:
+    return (
+        value.replace("\\", "\\\\")
+        .replace("\n", "\\n")
+        .replace(";", "\\;")
+        .replace(",", "\\,")
+    )
+
+
+def fold_ics_line(line: str) -> str:
+    folded = []
+    current = ""
+    for character in line:
+        if current and len((current + character).encode("utf-8")) > 75:
+            folded.append(current)
+            current = " " + character
+        else:
+            current += character
+    folded.append(current)
+    return "\r\n".join(folded)
+
+
+def calendar_filename(tournament: str) -> str:
+    safe_name = re.sub(r'[\\/:*?"<>|\x00-\x1f]', "-", tournament).strip(" .")
+    return f"{safe_name or 'Turnier'}.ics"
+
+
+def build_registration_calendars(previous: str, current: str) -> list[tuple[str, str]]:
+    header, added_lines, _, _ = get_table_changes(previous, current)
+    columns = header.split("\t") if header else []
+    required = {"onlineMeldungAb", "turnierbezeichnung"}
+    if not required.issubset(columns):
+        return []
+
+    column_indexes = {column: index for index, column in enumerate(columns)}
+    calendars = []
+    filename_counts: dict[str, int] = {}
+    generated_at = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    for line in added_lines:
+        cells = line.split("\t")
+
+        def cell(column: str) -> str:
+            index = column_indexes.get(column)
+            return cells[index].strip() if index is not None and index < len(cells) else ""
+
+        registration_start = cell("onlineMeldungAb")
+        tournament = cell("turnierbezeichnung")
+        if not registration_start or not tournament:
+            continue
+        try:
+            start_date = datetime.strptime(registration_start, "%d.%m.%Y").date()
+        except ValueError:
+            continue
+
+        summary = f"melden für {tournament}"
+        same_day_reminder = datetime.combine(
+            start_date,
+            time(hour=7),
+            tzinfo=ZoneInfo("Europe/Berlin"),
+        ).astimezone(timezone.utc)
+        description_parts = []
+        if cell("datumAb"):
+            description_parts.append(f"Turnierdatum: {cell('datumAb')}")
+        if cell("ort"):
+            description_parts.append(f"Ort: {cell('ort')}")
+        if cell("anmeldelink"):
+            description_parts.append(f"Anmeldung: {cell('anmeldelink')}")
+        uid_source = f"{registration_start}|{tournament}|{cell('anmeldelink')}"
+        uid = hashlib.sha256(uid_source.encode("utf-8")).hexdigest()[:24]
+
+        event = [
+            "BEGIN:VEVENT",
+            f"UID:{uid}@ringerdb-watcher",
+            f"DTSTAMP:{generated_at}",
+            f"DTSTART;VALUE=DATE:{start_date.strftime('%Y%m%d')}",
+            f"DTEND;VALUE=DATE:{(start_date + timedelta(days=1)).strftime('%Y%m%d')}",
+            f"SUMMARY:{escape_ics(summary)}",
+        ]
+        if description_parts:
+            event.append(f"DESCRIPTION:{escape_ics(chr(10).join(description_parts))}")
+        if cell("ort"):
+            event.append(f"LOCATION:{escape_ics(cell('ort'))}")
+        if cell("anmeldelink"):
+            event.append(f"URL:{cell('anmeldelink')}")
+        event.extend(
+            [
+                "BEGIN:VALARM",
+                "TRIGGER:-P1D",
+                "ACTION:DISPLAY",
+                f"DESCRIPTION:{escape_ics(summary)}",
+                "END:VALARM",
+                "BEGIN:VALARM",
+                f"TRIGGER;VALUE=DATE-TIME:{same_day_reminder.strftime('%Y%m%dT%H%M%SZ')}",
+                "ACTION:DISPLAY",
+                f"DESCRIPTION:{escape_ics(summary)}",
+                "END:VALARM",
+                "END:VEVENT",
+            ]
+        )
+        calendar_lines = [
+            "BEGIN:VCALENDAR",
+            "VERSION:2.0",
+            "PRODID:-//RingerDB Watcher//DE",
+            "CALSCALE:GREGORIAN",
+            "METHOD:PUBLISH",
+            *event,
+            "END:VCALENDAR",
+        ]
+        filename = calendar_filename(tournament)
+        filename_counts[filename] = filename_counts.get(filename, 0) + 1
+        if filename_counts[filename] > 1:
+            filename = f"{Path(filename).stem} ({filename_counts[filename]}).ics"
+        calendar_content = "\r\n".join(fold_ics_line(line) for line in calendar_lines) + "\r\n"
+        calendars.append((filename, calendar_content))
+
+    return calendars
+
+
+def write_table_report(
+    previous: str,
+    current: str,
+    report_path: Path,
+    title: str,
+    url: str,
+) -> tuple[int, int, int]:
+    header, added_lines, changed_lines, removed_lines = get_table_changes(previous, current)
+    changed_current_lines = [current_line for _, current_line in changed_lines]
 
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     report = f"""<!doctype html>
@@ -359,7 +527,7 @@ def write_table_report(previous: str, current: str, report_path: Path, title: st
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{html.escape(title)} - Tabellen-Aenderungen</title>
+  <title>{html.escape(title)} - Tabellen-Änderungen</title>
   <style>
     body {{ font-family: Arial, sans-serif; margin: 32px; color: #1f2933; }}
     header {{ margin-bottom: 24px; }}
@@ -370,34 +538,57 @@ def write_table_report(previous: str, current: str, report_path: Path, title: st
     table {{ border-collapse: collapse; width: 100%; font-size: 14px; }}
     th, td {{ border: 1px solid #d8dde5; padding: 8px 10px; vertical-align: top; text-align: left; }}
     th {{ background: #f4f6f8; font-weight: 700; }}
+    td {{ overflow-wrap: anywhere; }}
     tr.added td {{ background: #e8f7ee; }}
-    tr.removed td {{ background: #fdeaea; text-decoration: line-through; }}
+    tr.changed td {{ background: #fff4cc; }}
     .empty {{ color: #697386; }}
+    @media only screen and (max-width: 640px) {{
+      body {{ margin: 12px; font-size: 16px; }}
+      h1 {{ font-size: 22px; }}
+      h2 {{ font-size: 19px; }}
+      .summary {{ display: block; }}
+      .pill {{ margin-bottom: 8px; }}
+      table, tbody, tr, td {{ display: block; width: 100%; box-sizing: border-box; }}
+      thead {{ display: none; }}
+      table {{ border: 0; font-size: 15px; }}
+      tr {{ border: 1px solid #d8dde5; border-radius: 8px; margin-bottom: 14px; overflow: hidden; }}
+      td {{
+        border: 0;
+        border-bottom: 1px solid #d8dde5;
+        display: grid;
+        grid-template-columns: minmax(105px, 36%) 1fr;
+        gap: 10px;
+        padding: 10px;
+      }}
+      td:last-child {{ border-bottom: 0; }}
+      td::before {{ content: attr(data-label); font-weight: 700; text-decoration: none; }}
+      a {{ overflow-wrap: anywhere; }}
+    }}
   </style>
 </head>
 <body>
   <header>
     <h1>{html.escape(title)}</h1>
     <p><a href="{html.escape(url)}">{html.escape(url)}</a></p>
-    <p>Geprueft am {html.escape(now)}</p>
+    <p>Geprüft am {html.escape(now)}</p>
     <div class="summary">
-      <div class="pill">Neue Tabellenzeilen: {len(added_lines)}</div>
-      <div class="pill">Entfernte Tabellenzeilen: {len(removed_lines)}</div>
+      <div class="pill">Neue Turniere: {len(added_lines)}</div>
+      <div class="pill">Geänderte Turniere: {len(changed_lines)}</div>
     </div>
   </header>
   <section>
-    <h2>Neue Zeilen</h2>
+    <h2>Neue Turniere</h2>
     {format_table_rows(split_table_rows(chr(10).join([header] + added_lines)), "headered").replace('class="headered"', 'class="added"') if added_lines and header else format_table_rows(split_table_rows(chr(10).join(added_lines)), "added")}
   </section>
   <section>
-    <h2>Entfernte Zeilen</h2>
-    {format_table_rows(split_table_rows(chr(10).join([header] + removed_lines)), "headered").replace('class="headered"', 'class="removed"') if removed_lines and header else format_table_rows(split_table_rows(chr(10).join(removed_lines)), "removed")}
+    <h2>Geänderte Turniere</h2>
+    {format_table_rows(split_table_rows(chr(10).join([header] + changed_current_lines)), "headered").replace('class="headered"', 'class="changed"') if changed_current_lines and header else format_table_rows(split_table_rows(chr(10).join(changed_current_lines)), "changed")}
   </section>
 </body>
 </html>
 """
     report_path.write_text(report, encoding="utf-8")
-    return len(added_lines), len(removed_lines)
+    return len(added_lines), len(changed_lines), len(removed_lines)
 
 
 def get_env_or_value(config: dict, key: str, default: str = "") -> str:
@@ -407,11 +598,18 @@ def get_env_or_value(config: dict, key: str, default: str = "") -> str:
     return config.get(key, default)
 
 
-def send_email_report(config: dict, report_path: Path, added: int, removed: int) -> None:
+def send_email_report(
+    config: dict,
+    report_path: Path,
+    added: int,
+    changed: int,
+    removed: int,
+    calendar_attachments: list[tuple[str, str]] | None = None,
+) -> None:
     email_config = config.get("email", {})
     if not email_config.get("enabled", False):
         return
-    if email_config.get("send_only_on_changes", True) and not (added or removed):
+    if email_config.get("send_only_on_changes", True) and not (added or changed):
         return
 
     smtp_host = get_env_or_value(email_config, "smtp_host")
@@ -428,15 +626,16 @@ def send_email_report(config: dict, report_path: Path, added: int, removed: int)
     if not smtp_host or not sender or not recipients:
         raise ValueError("email config must include smtp_host, from and to")
 
-    subject = email_config.get("subject", "RingerDB Watcher: Aenderungen gefunden")
+    subject = email_config.get("subject", "RingerDB Watcher: Änderungen gefunden")
     message = EmailMessage()
     message["From"] = sender
     message["To"] = ", ".join(recipients)
     message["Date"] = email.utils.formatdate(localtime=True)
-    message["Subject"] = f"{subject} (+{added} -{removed})"
+    message["Subject"] = f"{subject} (+{added} ~{changed} -{removed})"
     html_report = report_path.read_text(encoding="utf-8")
     message.set_content(
-        f"RingerDB Watcher hat Aenderungen gefunden: +{added} -{removed}\n\n"
+        f"RingerDB Watcher hat Änderungen gefunden: "
+        f"+{added} neu, ~{changed} geändert, -{removed} entfernt\n\n"
         f"Der HTML-Report ist als Anhang enthalten.\n"
     )
     message.add_alternative(html_report, subtype="html")
@@ -444,8 +643,17 @@ def send_email_report(config: dict, report_path: Path, added: int, removed: int)
         html_report.encode("utf-8"),
         maintype="text",
         subtype="html",
+        params={"charset": "UTF-8"},
         filename=report_path.name,
     )
+    for calendar_name, calendar_content in calendar_attachments or []:
+        message.add_attachment(
+            calendar_content.encode("utf-8"),
+            maintype="text",
+            subtype="calendar",
+            params={"charset": "UTF-8", "method": "PUBLISH"},
+            filename=calendar_name,
+        )
 
     smtp_ssl = email_config.get("ssl", False)
     if smtp_ssl:
@@ -509,13 +717,22 @@ def main() -> int:
 
     previous = previous_snapshot.read_text(encoding="utf-8")
     report_path = report_dir / f"{timestamp}-{name}.html"
+    calendar_attachments = []
     if compare_mode in {"api", "tables"}:
-        added, removed = write_table_report(previous, text, report_path, name, config.get("page_url", config["url"]))
+        added, changed, removed = write_table_report(
+            previous,
+            text,
+            report_path,
+            name,
+            config.get("page_url", config["url"]),
+        )
+        calendar_attachments = build_registration_calendars(previous, text)
     else:
         added, removed = write_report(previous, text, report_path, name, config.get("page_url", config["url"]))
+        changed = 0
     print(f"Snapshot saved: {current_snapshot}")
     print(f"Report written: {report_path}")
-    print(f"Changes: +{added} -{removed}")
+    print(f"Changes: +{added} ~{changed} -{removed}")
     removed_snapshots = prune_old_files(snapshot_dir, f"*.{snapshot_extension}", retention_count)
     removed_reports = prune_old_files(report_dir, "*.html", retention_count)
     if removed_snapshots or removed_reports:
@@ -523,8 +740,8 @@ def main() -> int:
             f"Retention cleanup: {len(removed_snapshots)} snapshot(s), "
             f"{len(removed_reports)} report(s) removed"
         )
-    send_email_report(config, report_path, added, removed)
-    return 1 if args.fail_on_changes and (added or removed) else 0
+    send_email_report(config, report_path, added, changed, removed, calendar_attachments)
+    return 1 if args.fail_on_changes and (added or changed) else 0
 
 
 if __name__ == "__main__":
