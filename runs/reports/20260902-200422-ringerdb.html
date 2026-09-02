@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ringerdb - Tabellen-Änderungen</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; color: #1f2933; }
+    header { margin-bottom: 24px; }
+    a { color: #005a9c; }
+    .summary { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0; }
+    .pill { border: 1px solid #d8dde5; border-radius: 6px; padding: 8px 10px; }
+    section { margin-top: 28px; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th, td { border: 1px solid #d8dde5; padding: 8px 10px; vertical-align: top; text-align: left; }
+    th { background: #f4f6f8; font-weight: 700; }
+    td { overflow-wrap: anywhere; }
+    tr.added td { background: #e8f7ee; }
+    tr.changed td { background: #fff4cc; }
+    .empty { color: #697386; }
+    @media only screen and (max-width: 640px) {
+      body { margin: 12px; font-size: 16px; }
+      h1 { font-size: 22px; }
+      h2 { font-size: 19px; }
+      .summary { display: block; }
+      .pill { margin-bottom: 8px; }
+      table, tbody, tr, td { display: block; width: 100%; box-sizing: border-box; }
+      thead { display: none; }
+      table { border: 0; font-size: 15px; }
+      tr { border: 1px solid #d8dde5; border-radius: 8px; margin-bottom: 14px; overflow: hidden; }
+      td {
+        border: 0;
+        border-bottom: 1px solid #d8dde5;
+        display: grid;
+        grid-template-columns: minmax(105px, 36%) 1fr;
+        gap: 10px;
+        padding: 10px;
+      }
+      td:last-child { border-bottom: 0; }
+      td::before { content: attr(data-label); font-weight: 700; text-decoration: none; }
+      a { overflow-wrap: anywhere; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ringerdb</h1>
+    <p><a href="https://turniere.ringerdb.de/zukunft">https://turniere.ringerdb.de/zukunft</a></p>
+    <p>Geprüft am 2026-09-02 20:04:46</p>
+    <div class="summary">
+      <div class="pill">Neue Turniere: 1</div>
+      <div class="pill">Geänderte Turniere: 2</div>
+    </div>
+  </header>
+  <section>
+    <h2>Neue Turniere</h2>
+    <table><thead><tr><th>datumAb</th><th>datumBis</th><th>turnierbezeichnung</th><th>ort</th><th>ausrichtenderVerein</th><th>veranstalter</th><th>onlineMeldungAb</th><th>onlineMeldungBis</th><th>altersklassen</th><th>stilarten</th><th>anmeldelink</th></tr></thead><tbody><tr class="added"><td data-label="datumAb">05.09.2026</td><td data-label="datumBis">05.09.2026</td><td data-label="turnierbezeichnung">Finnmarksmesterskap</td><td data-label="ort">Hammerfest</td><td data-label="ausrichtenderVerein">Hammerfest BK</td><td data-label="veranstalter">Finnmark BK</td><td data-label="onlineMeldungAb"></td><td data-label="onlineMeldungBis"></td><td data-label="altersklassen">Bryteskole - gutter, Bryteskole - piker, G12, G15, J12, J15, JK, JM, KG, KM, Knøtter gutter, Knøtter jenter, SH, Senior kvinner, UK, UM</td><td data-label="stilarten">Freistil, Gr.-röm.</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/25867">https://ringen.liga-db.de/de/Turniere/Detail/25867</a></td></tr></tbody></table>
+  </section>
+  <section>
+    <h2>Geänderte Turniere</h2>
+    <table><thead><tr><th>datumAb</th><th>datumBis</th><th>turnierbezeichnung</th><th>ort</th><th>ausrichtenderVerein</th><th>veranstalter</th><th>onlineMeldungAb</th><th>onlineMeldungBis</th><th>altersklassen</th><th>stilarten</th><th>anmeldelink</th></tr></thead><tbody><tr class="changed"><td data-label="datumAb">05.09.2026</td><td data-label="datumBis">05.09.2026</td><td data-label="turnierbezeichnung">Sparbanken Skåne Cup 2026</td><td data-label="ort">Hästveda</td><td data-label="ausrichtenderVerein">Hästveda BK</td><td data-label="veranstalter">Skånes BF</td><td data-label="onlineMeldungAb"></td><td data-label="onlineMeldungBis"></td><td data-label="altersklassen">GR11, GR13, GR15, GR20, GR9, R17, WW11, WW13, WW15, WW17, WW23, WW9</td><td data-label="stilarten">Freistil, Gr.-röm.</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/25860">https://ringen.liga-db.de/de/Turniere/Detail/25860</a></td></tr><tr class="changed"><td data-label="datumAb">07.11.2026</td><td data-label="datumBis">07.11.2026</td><td data-label="turnierbezeichnung">Werner Seelenbinder Gedenkturnier</td><td data-label="ort">13051  Berlin</td><td data-label="ausrichtenderVerein">TUS Hellersdorf</td><td data-label="veranstalter">Berlin</td><td data-label="onlineMeldungAb">28.08.2026</td><td data-label="onlineMeldungBis">30.10.2026</td><td data-label="altersklassen">U 12, U 14, U 17, U 20</td><td data-label="stilarten">Freistil</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/25863">https://ringen.liga-db.de/de/Turniere/Detail/25863</a></td></tr></tbody></table>
+  </section>
+</body>
+</html>
