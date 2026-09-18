@@ -1,5 +1,4 @@
 datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineMeldungAb	onlineMeldungBis	altersklassen	stilarten	anmeldelink
-19.09.2026	19.09.2026	MDEM Gr. - röm.U 10 und U 12	14943 Luckenwalde	1. Luckenwalder SC	Brandenburg			U 10 GR, U 12 GR	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/24625
 19.09.2026	19.09.2026	Boden Brottningarna	Boden	BK Snar	Norrbottens Brottningsförbund			GR, GR11, GR13, GR15, GR17, GR9, WW, WW11, WW13, WW15, WW17, WW9	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25853
 19.09.2026	20.09.2026	Dinaburg Cup 2026	Olympic Centre	Daugavpils	Lettland			U15FS, U15GR, U15WW, U17FS, U17GR, U17WW	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25856
 19.09.2026	19.09.2026	Avoimet TUL vapaapainin mestaruusk. ja ikäkausik.	Tampere	Tampereen Painiseura	Finnland			TULM	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/25861
@@ -7,8 +6,12 @@ datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineM
 19.09.2026	19.09.2026	Nat. Jugendturnier	Uznach	RC Rapperswil-Jona	Region 3			Jug, Pic	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/25892
 19.09.2026	19.09.2026	Tapsan Painit	Muhos	Muhoksen Voitto	Finnland			AP, AT, PU09, PU11, PU13, PU15, PU17, TU09, TU11, TU13, TU15, TU17	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25903
 19.09.2026	19.09.2026	E. Pütsepa MÄV	Võru	MK Pütsep	Võru sk			Kr-r U12 2014->, Kr-r U17 2009->, N U16 2010->, Vaba U12 2014->, Vaba U17 2009->	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25905
+19.09.2026	19.09.2026	Kungsbacka Open	Kungsbacka	Kungsbacka BK	Hallands Brottningsförbund			GR 11, GR 13, GR 15, GR 17, GR 9, WW 11, WW 13, WW 15, WW 17, WW 9	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25909
+19.09.2026	19.09.2026	VII. International Memorial of Maros Tall	Wrestling Jedla Kosice	ZK Kosice 1904	Slowakei			U15, U18	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/25910
+19.09.2026	19.09.2026	Test	Test	Tartu maadleb	Estland			DJ, EJ	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/25911
 20.09.2026	20.09.2026	Spessartpokal 2026	Hösbach	KSC Hösbach	Hessen			U 08, U 10, U 12, U 14, U 17	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24834
-26.09.2026	26.09.2026	Nuoriso-turnaus	Ilmajoki	Ilmajoen Kisailijat	Finnland			GA, GB, GL, GS, GX, M, P, TQ, WA, WL	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25904
+26.09.2026	26.09.2026	MDEM Gr. - röm.U 10 und U 12	14943 Luckenwalde	1. Luckenwalder SC	Brandenburg			U 10 GR, U 12 GR	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/24625
+26.09.2026	26.09.2026	Nuoriso-turnaus	Ilmajoki	Ilmajoen Kisailijat	Finnland			GA, GB, GL, GS, GX, M, P, TQ, WA, WG, WL	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25904
 27.09.2026	27.09.2026	12. Ewald "Bomber" Vogel Gedächtnisturnier	NSU - Obereisesheim	VfL Obereisesheim	Württemberg			U 10, U 12, U 14, U 8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24576
 27.09.2026	27.09.2026	Preis der Stadt Karlsruhe	Karlsruhe Daxlanden	ASV Daxlanden	Nordbaden			U10, U12, U14, U17, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24686
 27.09.2026	27.09.2026	37. Int. Mühlenbacher Jugendturnier	Mühlenbach 	VfK Mühlenbach	Südbaden			CJ, DJ	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24812
@@ -16,7 +19,7 @@ datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineM
 03.10.2026	04.10.2026	Öresundsträffen 2026	Helsingborg	HBK Bergania	Skånes BF			GR, WW9	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/24852
 03.10.2026	03.10.2026	XVI Gustav Vahari MÄV	Lihula	Tartu maadleb	Estland			Kr-r U11 2015->, Kr-r U13 2013->, Kr-r U15 2011->, Kr-r U17 2009->, N U11 2015->, N U13 2013->, N U15 2011->, N U17 2009->	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25855
 03.10.2026	03.10.2026	Olles Minnesträff	Haparanda	Haparanda Sportklubb Taktik	Norrbottens Brottningsförbund			GR, GR11, GR13, GR15, GR17, GR9, WW, WW11, WW13, WW15, WW17, WW9	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25906
-09.10.2026	11.10.2026	Umeå Wrestling battle	Umeå	Umeå Brottning	Västernorrlands BF			FS 13, FS 15, FS 17, FS SM-viktklasser, GR 11, GR 13, GR 15, GR 17, GR 9, GR SM-viktklasser, WW 11, WW 13, WW 15, WW 17, WW 9, WW OS och SM	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/24853
+09.10.2026	11.10.2026	Umeå Wrestling battle	Umeå	Umeå Brottning	Västernorrlands BF			FS, FS 13, FS 15, FS 17, GR 11, GR 13, GR 15, GR 17, GR 9, GR SM-viktklasser, WW 11, WW 13, WW 15, WW 17, WW 9, WW OS och SM	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/24853
 10.10.2026	10.10.2026	Lohi-painit	Kotka	Popinniemen Isku	Finnland			15, 17, t13, tu11, tu17, tu9, u09, u11, u13	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25858
 11.10.2026	11.10.2026	2. Rudi Mackamul Gedächtnisturnier	Wüstenrot - Neuhütten	AC Wüstenrot	Württemberg			U 10, U 12, U 14, U 8	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/24575
 11.10.2026	11.10.2026	Anfängerturnier Neu-Isenburg	Neu-Isenburg	KSV Neu-Isenburg	Hessen	13.09.2026	13.09.2026	JG 16-20	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24837
@@ -35,9 +38,11 @@ datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineM
 22.11.2026	22.11.2026	30. Georg Grehmann Gedächtnis Turnier	Schwäbisch Hall	ASV Schwäbisch Hall	Württemberg			U 8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24574
 22.11.2026	22.11.2026	22. Nationales Odenwaldpokalturnier	Rimbach	KSV Rimbach	Hessen			U 10, U 12, U 14, U 17, U 8	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25897
 05.12.2026	05.12.2026	3. Offenes Fun-Turnier 2026	Heusweiler	AC Heusweiler	Saarland			AK1, AK2, AK3	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24842
+05.12.2026	05.12.2026	19.SKODA-CUP Einladungsturnier	17109 Demmin	Demminer RV	Mecklenburg-Vorpommern			U 14, U 17, weibl. U12, weibl. U14	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/25907
 06.12.2026	06.12.2026	23. Herbert Link Gedächtnisturnier	Lauffen am Neckar	KSV Lauffen	Württemberg			U 10, U 12, U 14, U 8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24573
 06.12.2026	06.12.2026	Anfängerturnier Dieburg	Dieburg	ASV Dieburg	Hessen	06.11.2026	29.11.2026	U 12, U 14, Ü 14	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24846
 11.12.2026	13.12.2026	Helsinki Open Wrestling Tournament 2026	Helsinki	Helsingin Paini-Miehet (HPM)	Finnland			FS U11 BOYS, FS U13 BOYS, FS U15 BOYS, FS U17 BOYS, FS U17+, FS U9 BOYS AND GIRLS, WW U11 GIRLS, WW U14 GIRLS, WW U17 GIRLS, WW U17+	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24825
+12.12.2026	12.12.2026	36. Weihnachtsturnier des SAV Torgelow	17358 Torgelow	SAV Torgelow	Mecklenburg-Vorpommern	21.09.2026	04.12.2026	U-10, U-12, U-8	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25908
 27.12.2026	27.12.2026	Test AB + KA	Blub	RCA Bayreuth	Oberfranken	07.09.2026	10.09.2026	Frauen, Freundschaftskämpfe, GR-Frauen, GR-Männer, GR-U10, GR-U12, GR-U14, GR-U17, GR-U20, GR-U8, Männer, U10, U12, U14, U17, U20, U8, W-U12, W-U14, W-U17, W-U20	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25896
 28.12.2026	28.12.2026	Test Korbi	TODO	SC Unterföhring	Oberbayern	06.09.2026	07.09.2026	Frauen, Freundschaftskämpfe, GR-Frauen, GR-Männer, GR-U10, GR-U12, GR-U14, GR-U17, GR-U20, GR-U8, Männer, U10, U12, U14, U17, U20, U8, W-U12, W-U14, W-U17, W-U20	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25889
 31.12.2026	31.12.2026	Vorlage Bayern	TODO	RCA Bayreuth	Oberfranken			Frauen, Freundschaftskämpfe, GR-Frauen, GR-Männer, GR-U10, GR-U12, GR-U14, GR-U17, GR-U20, GR-U8, Männer, U10, U12, U14, U17, U20, U8, W-U12, W-U14, W-U17, W-U20	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/24786
