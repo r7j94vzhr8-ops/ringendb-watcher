@@ -1,10 +1,4 @@
 datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineMeldungAb	onlineMeldungBis	altersklassen	stilarten	anmeldelink
-09.10.2026	11.10.2026	Umeå Wrestling battle	Umeå	Umeå Brottning	Västernorrlands BF			FS, FS 13, FS 15, FS 17, FS13, GR, GR 11, GR 13, GR 15, GR 17, GR 9, WW, WW 11, WW 13, WW 15, WW 17, WW 9	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/24853
-10.10.2026	10.10.2026	Lohi-painit	Kotka	Popinniemen Isku	Finnland			Fehler beim Laden: HTTP Error 404: Not Found		https://ringen.liga-db.de/de/Turniere/Detail/25858
-10.10.2026	10.10.2026	Havelcup 2026	16761 Hennigsdorf	SV Stahl Henningsdorf	Brandenburg			U 10 GR, U 12 GR	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25942
-10.10.2026	10.10.2026	Finlandia Freestyle Cup	Hyvinkää	Hyvinkään Painiklubi	Finnland			Miehet, Naiset, Pojat U13, Pojat U17, Pojat U9, Tytöt U13, Tytöt U17, Tytöt U9	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/25949
-10.10.2026	10.10.2026	Türi SKL auhinnaturniir	Türi	JMM	Estland			P U10, P U16, T U10, T U16	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/25952
-10.10.2026	10.10.2026	Sparbanken syd cup 2026	Marsvinsholm		Skånes BF			GR11, GR14, GR9, WW11, WW14, WW9	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25956
 11.10.2026	11.10.2026	2. Rudi Mackamul Gedächtnisturnier	Wüstenrot - Neuhütten	AC Wüstenrot	Württemberg			U 10, U 12, U 14, U 8	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/24575
 11.10.2026	11.10.2026	Anfängerturnier Neu-Isenburg	Neu-Isenburg	KSV Neu-Isenburg	Hessen	13.09.2026	13.09.2026	JG 16-20	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24837
 16.10.2026	17.10.2026	 Int.  Brandenburg Cup 2026 U17 / U23 weiblich	Frankfurt Oder	RSV Frankfurt/Oder	Brandenburg			U17 WR, U23 WR	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/25943
@@ -20,10 +14,11 @@ datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineM
 25.10.2026	25.10.2026	45. Internationales Ostalb-Ringerturnier	Aalen	KSV Aalen 05 e.V.	Württemberg	14.09.2026	15.10.2026	U12, U14, U17, U20	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24848
 31.10.2026	31.10.2026	landesoffenes Jugendturnier	Wolfhagen	VfL Wolfhagen	Hessen	01.10.2026	21.10.2026	U 08, U 10, U 12, U 14	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/25898
 07.11.2026	07.11.2026	Werner Seelenbinder Gedenkturnier	13051  Berlin	TUS Hellersdorf	Grüner Campus Malchow	28.08.2026	30.10.2026	U 12, U 14, U 17, U 20	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/25863
-08.11.2026	08.11.2026	Anfängerturnier Krombach	KSC Krombach	KSC Krombach	Hessen	08.10.2026	01.11.2026	U 10, U 8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24847
+08.11.2026	08.11.2026	Anfängerturnier Krombach	KSC Krombach	KSC Krombach	Hessen	08.10.2026	08.10.2026	U 10, U 8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24847
 08.11.2026	08.11.2026	31. Internat. Walter-Dobler-Gedächtnisturnier	Ebersbach	SV Ebersbach	Württemberg	12.09.2026	29.10.2026	U08, U10, U12, U14	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25902
 08.11.2026	08.11.2026	11. Ruppbergpokalturnier der Stadt ZM	98544 Zella-Mehlis	AV Zella-Mehlis	Thüringen			U10, U12, U8	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25960
 14.11.2026	15.11.2026	Daugavpils International Wrestling Open 2026	Olympic Centre	Daugavpils	Lettland			Fehler beim Laden: HTTP Error 404: Not Found		https://ringen.liga-db.de/de/Turniere/Detail/25940
+14.11.2026	14.11.2026	Stålfejden 2026	Sandviken	Sandvikens BK	Gävleborgs BF			GR, GR11, GR13, GR15, GR17, GR9, WW11, WW13, WW15, WW17	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25966
 15.11.2026	15.11.2026	Goldstadtpokal	Pforzheim	SV 98 Brötzingen	Nordbaden			U10, U12, U14, U17, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24688
 15.11.2026	15.11.2026	Anfängerturnier Freistil Schlichten 2026	Schlichten	ASV Schlichten	Württemberg	11.09.2026	09.11.2026	U10, U12, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/25899
 22.11.2026	22.11.2026	30. Georg Grehmann Gedächtnis Turnier	Schwäbisch Hall	ASV Schwäbisch Hall	Württemberg			U 8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24574
