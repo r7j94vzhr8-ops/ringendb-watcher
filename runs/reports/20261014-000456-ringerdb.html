@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ringerdb - Tabellen-Änderungen</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; color: #1f2933; }
+    header { margin-bottom: 24px; }
+    a { color: #005a9c; }
+    .summary { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0; }
+    .pill { border: 1px solid #d8dde5; border-radius: 6px; padding: 8px 10px; }
+    section { margin-top: 28px; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th, td { border: 1px solid #d8dde5; padding: 8px 10px; vertical-align: top; text-align: left; }
+    th { background: #f4f6f8; font-weight: 700; }
+    td { overflow-wrap: anywhere; }
+    tr.added td { background: #e8f7ee; }
+    tr.changed td { background: #fff4cc; }
+    .empty { color: #697386; }
+    @media only screen and (max-width: 640px) {
+      body { margin: 12px; font-size: 16px; }
+      h1 { font-size: 22px; }
+      h2 { font-size: 19px; }
+      .summary { display: block; }
+      .pill { margin-bottom: 8px; }
+      table, tbody, tr, td { display: block; width: 100%; box-sizing: border-box; }
+      thead { display: none; }
+      table { border: 0; font-size: 15px; }
+      tr { border: 1px solid #d8dde5; border-radius: 8px; margin-bottom: 14px; overflow: hidden; }
+      td {
+        border: 0;
+        border-bottom: 1px solid #d8dde5;
+        display: grid;
+        grid-template-columns: minmax(105px, 36%) 1fr;
+        gap: 10px;
+        padding: 10px;
+      }
+      td:last-child { border-bottom: 0; }
+      td::before { content: attr(data-label); font-weight: 700; text-decoration: none; }
+      a { overflow-wrap: anywhere; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ringerdb</h1>
+    <p><a href="https://turniere.ringerdb.de/zukunft">https://turniere.ringerdb.de/zukunft</a></p>
+    <p>Geprüft am 2026-10-14 00:05:28</p>
+    <div class="summary">
+      <div class="pill">Neue Turniere: 8</div>
+      <div class="pill">Geänderte Turniere: 2</div>
+    </div>
+  </header>
+  <section>
+    <h2>Neue Turniere</h2>
+    <table><thead><tr><th>datumAb</th><th>datumBis</th><th>turnierbezeichnung</th><th>ort</th><th>ausrichtenderVerein</th><th>veranstalter</th><th>onlineMeldungAb</th><th>onlineMeldungBis</th><th>altersklassen</th><th>stilarten</th><th>anmeldelink</th></tr></thead><tbody><tr class="added"><td data-label="datumAb">17.10.2026</td><td data-label="datumBis">17.10.2026</td><td data-label="turnierbezeichnung">Finnvedscupen 2026</td><td data-label="ort">Värnamo</td><td data-label="ausrichtenderVerein">Värnamo BK</td><td data-label="veranstalter">Smålands BF</td><td data-label="onlineMeldungAb"></td><td data-label="onlineMeldungBis"></td><td data-label="altersklassen">GR 11, GR 13, GR 15, GR 9, WW 11, WW 13, WW 15, WW 9</td><td data-label="stilarten">Freistil, Gr.-röm.</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/25977">https://ringen.liga-db.de/de/Turniere/Detail/25977</a></td></tr><tr class="added"><td data-label="datumAb">18.10.2026</td><td data-label="datumBis">18.10.2026</td><td data-label="turnierbezeichnung">30. Rolf Würges Gedächtnisturnier</td><td data-label="ort">Kirrlach</td><td data-label="ausrichtenderVerein">KSV Kirrlach</td><td data-label="veranstalter">Nordbaden</td><td data-label="onlineMeldungAb"></td><td data-label="onlineMeldungBis"></td><td data-label="altersklassen">U10, U12, U14, U17, U8, WJ</td><td data-label="stilarten">Freistil</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/25973">https://ringen.liga-db.de/de/Turniere/Detail/25973</a></td></tr><tr class="added"><td data-label="datumAb">21.11.2026</td><td data-label="datumBis">21.11.2026</td><td data-label="turnierbezeichnung">Kolbotn Cup 2026</td><td data-label="ort">Langhus</td><td data-label="ausrichtenderVerein">Kolbotn IL</td><td data-label="veranstalter">Oslo Akershus BK</td><td data-label="onlineMeldungAb"></td><td data-label="onlineMeldungBis"></td><td data-label="altersklassen">G12, G5, H20, J12, J15, K20, U17</td><td data-label="stilarten">Freistil, Gr.-röm.</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/25970">https://ringen.liga-db.de/de/Turniere/Detail/25970</a></td></tr><tr class="added"><td data-label="datumAb">31.12.2026</td><td data-label="datumBis">31.12.2026</td><td data-label="turnierbezeichnung">Maik Test</td><td data-label="ort">Kandern</td><td data-label="ausrichtenderVerein">TSV Kandern</td><td data-label="veranstalter">Südbaden</td><td data-label="onlineMeldungAb"></td><td data-label="onlineMeldungBis"></td><td data-label="altersklassen">A/B, CJ, DJ, EJ</td><td data-label="stilarten">Freistil</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/25971">https://ringen.liga-db.de/de/Turniere/Detail/25971</a></td></tr><tr class="added"><td data-label="datumAb">31.12.2026</td><td data-label="datumBis">31.12.2026</td><td data-label="turnierbezeichnung">Test ESV</td><td data-label="ort">Test</td><td data-label="ausrichtenderVerein">RCA Bayreuth</td><td data-label="veranstalter">Oberfranken</td><td data-label="onlineMeldungAb"></td><td data-label="onlineMeldungBis"></td><td data-label="altersklassen">Frauen, Freundschaftskämpfe, GR-Frauen, GR-Männer, GR-U10, GR-U12, GR-U14, GR-U17, GR-U20, GR-U8, Männer, U10, U12, U14, U17, U20, U8, W-U12, W-U14, W-U17, W-U20</td><td data-label="stilarten">Freistil, Gr.-röm.</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/25972">https://ringen.liga-db.de/de/Turniere/Detail/25972</a></td></tr><tr class="added"><td data-label="datumAb">20.02.2027</td><td data-label="datumBis">20.02.2027</td><td data-label="turnierbezeichnung">Landesmeisterschaft Jugend U8, U12</td><td data-label="ort">Schiffweiler</td><td data-label="ausrichtenderVerein">ASV Hüttigweiler</td><td data-label="veranstalter">Saarland</td><td data-label="onlineMeldungAb">01.12.2026</td><td data-label="onlineMeldungBis">16.02.2027</td><td data-label="altersklassen">U12, U8</td><td data-label="stilarten">Gr.-röm.</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/25975">https://ringen.liga-db.de/de/Turniere/Detail/25975</a></td></tr><tr class="added"><td data-label="datumAb">21.02.2027</td><td data-label="datumBis">21.02.2027</td><td data-label="turnierbezeichnung">Landesmeisterschaft Jugend U10, U14, U17</td><td data-label="ort">Schiffweiler</td><td data-label="ausrichtenderVerein">ASV Hüttigweiler</td><td data-label="veranstalter">Saarland</td><td data-label="onlineMeldungAb">01.12.2026</td><td data-label="onlineMeldungBis">16.02.2027</td><td data-label="altersklassen">U10, U14, U17</td><td data-label="stilarten">Gr.-röm.</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/25976">https://ringen.liga-db.de/de/Turniere/Detail/25976</a></td></tr><tr class="added"><td data-label="datumAb">28.08.2027</td><td data-label="datumBis">28.08.2027</td><td data-label="turnierbezeichnung">5. Uwe Kunz Gedächtnisturnier 2027</td><td data-label="ort">Eppelborn</td><td data-label="ausrichtenderVerein">KSV Eppelborn</td><td data-label="veranstalter">Saarland</td><td data-label="onlineMeldungAb"></td><td data-label="onlineMeldungBis"></td><td data-label="altersklassen">U10, U12, U14, U8</td><td data-label="stilarten">Freistil</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/25974">https://ringen.liga-db.de/de/Turniere/Detail/25974</a></td></tr></tbody></table>
+  </section>
+  <section>
+    <h2>Geänderte Turniere</h2>
+    <table><thead><tr><th>datumAb</th><th>datumBis</th><th>turnierbezeichnung</th><th>ort</th><th>ausrichtenderVerein</th><th>veranstalter</th><th>onlineMeldungAb</th><th>onlineMeldungBis</th><th>altersklassen</th><th>stilarten</th><th>anmeldelink</th></tr></thead><tbody><tr class="changed"><td data-label="datumAb">25.10.2026</td><td data-label="datumBis">25.10.2026</td><td data-label="turnierbezeichnung">Munich Kids Open 2026</td><td data-label="ort">München</td><td data-label="ausrichtenderVerein">ESV München-Ost</td><td data-label="veranstalter">Oberbayern</td><td data-label="onlineMeldungAb">13.10.2026</td><td data-label="onlineMeldungBis">18.10.2026</td><td data-label="altersklassen">U10, U12, U14, U17, U8</td><td data-label="stilarten">Freistil</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/25968">https://ringen.liga-db.de/de/Turniere/Detail/25968</a></td></tr><tr class="changed"><td data-label="datumAb">31.12.2026</td><td data-label="datumBis">31.12.2026</td><td data-label="turnierbezeichnung">Badewitz Landturnier (Test)</td><td data-label="ort">Bayreuth</td><td data-label="ausrichtenderVerein">RCA Bayreuth</td><td data-label="veranstalter">Oberfranken</td><td data-label="onlineMeldungAb">01.10.2026</td><td data-label="onlineMeldungBis">31.10.2026</td><td data-label="altersklassen">Freundschaftskämpfe, U14, U17, U8</td><td data-label="stilarten">Freistil</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/25962">https://ringen.liga-db.de/de/Turniere/Detail/25962</a></td></tr></tbody></table>
+  </section>
+</body>
+</html>
