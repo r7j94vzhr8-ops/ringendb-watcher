@@ -1,5 +1,4 @@
 datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineMeldungAb	onlineMeldungBis	altersklassen	stilarten	anmeldelink
-22.10.2026	22.10.2026	Nääshalli painit 22.10.2026	Tampere	Tampereen Painiseura	Finnland			Fehler beim Laden: HTTP Error 404: Not Found		https://ringen.liga-db.de/de/Turniere/Detail/25987
 24.10.2026	25.10.2026	Georg Lurich tournament	Rakvere	SK Caaro	Estland			Girls U17, U13, U13  U15  U17 GU17, U15, U17	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/24851
 24.10.2026	24.10.2026	Pertsan Painit 2026	Sodankylä	Lapin Veikot	Finnland			JuSe, PAlo, PU11, PU13, PU17, TAlo, TU17	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25947
 24.10.2026	24.10.2026	Tampere Cup	Lempäälä	KOOVEE, TaVo	Jarkko Mattila			A, T11, T17, T9, U11, U15, U17, U20, U9	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25961
@@ -19,6 +18,7 @@ datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineM
 08.11.2026	08.11.2026	11. Ruppbergpokalturnier der Stadt ZM	98544 Zella-Mehlis	AV Zella-Mehlis	Thüringen			U10, U12, U8	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25960
 14.11.2026	15.11.2026	Daugavpils International Wrestling Open 2026	Olympic Centre	Daugavpils	Lettland			Fehler beim Laden: HTTP Error 404: Not Found		https://ringen.liga-db.de/de/Turniere/Detail/25940
 14.11.2026	14.11.2026	Stålfejden 2026	Sandviken	Sandvikens BK	Gävleborgs BF			GR, GR11, GR13, GR15, GR17, GR9, WW11, WW13, WW15, WW17	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25966
+14.11.2026	14.11.2026	SM-kilpailut VP U20 miehet ja U15 tytöt ja pojat	Järvenpää	Järvenpään Voimailijat	Finnland			Miehet U20, Pojat U15, Tytöt U15	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/26989
 15.11.2026	15.11.2026	Anfängerturnier Freistil Schlichten 2026	Schlichten	ASV Schlichten	Württemberg	11.09.2026	09.11.2026	Freundschaftskämpfe, U10, U12, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/25899
 21.11.2026	21.11.2026	Kolbotn Cup 2026	Langhus	Kolbotn IL	Oslo Akershus BK			G12, G5, H20, J12, J15, K20, U17	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25970
 21.11.2026	21.11.2026	DM Skåne 2026	Trelleborg	BK Starke	Skånes BF			GR11, GR13, GR15, GR17, GR9, WW11, WW13, WW15, WW17, WW9	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25985
@@ -29,6 +29,7 @@ datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineM
 02.12.2026	02.12.2026	Testturnier JG	Burgebrach	TSV Burgebrach	Oberfranken			GR-Männer, GR-U14, Männer	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25933
 05.12.2026	05.12.2026	3. Offenes Fun-Turnier 2026	Heusweiler	AC Heusweiler	Saarland			AK1, AK2, AK3	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24842
 05.12.2026	05.12.2026	19.SKODA-CUP Einladungsturnier	17109 Demmin	Demminer RV	Mecklenburg-Vorpommern			U 14, U 17, weibl. U12, weibl. U14	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/25907
+05.12.2026	05.12.2026	Herbert-Albrecht-Gedenkturnier	Suhl-Albrechts	SV Albrechts	Thüringen			U10, U12, U14, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/26990
 06.12.2026	06.12.2026	23. Herbert Link Gedächtnisturnier	Lauffen am Neckar	KSV Lauffen	Württemberg			U 10, U 12, U 14, U 8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24573
 06.12.2026	06.12.2026	Anfängerturnier Dieburg	Dieburg	ASV Dieburg	Hessen	06.11.2026	29.11.2026	U 12, U 14, Ü 14	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24846
 11.12.2026	13.12.2026	Helsinki Open Wrestling Tournament 2026	Helsinki	Helsingin Paini-Miehet (HPM)	Finnland			FS U11 BOYS, FS U13 BOYS, FS U15 BOYS, FS U17 BOYS, FS U17+, FS U9 BOYS AND GIRLS, WW U11 GIRLS, WW U14 GIRLS, WW U17 GIRLS, WW U17+	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24825
