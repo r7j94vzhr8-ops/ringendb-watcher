@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ringerdb - Tabellen-Änderungen</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; color: #1f2933; }
+    header { margin-bottom: 24px; }
+    a { color: #005a9c; }
+    .summary { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0; }
+    .pill { border: 1px solid #d8dde5; border-radius: 6px; padding: 8px 10px; }
+    section { margin-top: 28px; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th, td { border: 1px solid #d8dde5; padding: 8px 10px; vertical-align: top; text-align: left; }
+    th { background: #f4f6f8; font-weight: 700; }
+    td { overflow-wrap: anywhere; }
+    tr.added td { background: #e8f7ee; }
+    tr.changed td { background: #fff4cc; }
+    .empty { color: #697386; }
+    @media only screen and (max-width: 640px) {
+      body { margin: 12px; font-size: 16px; }
+      h1 { font-size: 22px; }
+      h2 { font-size: 19px; }
+      .summary { display: block; }
+      .pill { margin-bottom: 8px; }
+      table, tbody, tr, td { display: block; width: 100%; box-sizing: border-box; }
+      thead { display: none; }
+      table { border: 0; font-size: 15px; }
+      tr { border: 1px solid #d8dde5; border-radius: 8px; margin-bottom: 14px; overflow: hidden; }
+      td {
+        border: 0;
+        border-bottom: 1px solid #d8dde5;
+        display: grid;
+        grid-template-columns: minmax(105px, 36%) 1fr;
+        gap: 10px;
+        padding: 10px;
+      }
+      td:last-child { border-bottom: 0; }
+      td::before { content: attr(data-label); font-weight: 700; text-decoration: none; }
+      a { overflow-wrap: anywhere; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ringerdb</h1>
+    <p><a href="https://turniere.ringerdb.de/zukunft">https://turniere.ringerdb.de/zukunft</a></p>
+    <p>Geprüft am 2026-10-27 23:45:31</p>
+    <div class="summary">
+      <div class="pill">Neue Turniere: 5</div>
+      <div class="pill">Geänderte Turniere: 1</div>
+    </div>
+  </header>
+  <section>
+    <h2>Neue Turniere</h2>
+    <table><thead><tr><th>datumAb</th><th>datumBis</th><th>turnierbezeichnung</th><th>ort</th><th>ausrichtenderVerein</th><th>veranstalter</th><th>onlineMeldungAb</th><th>onlineMeldungBis</th><th>altersklassen</th><th>stilarten</th><th>anmeldelink</th></tr></thead><tbody><tr class="added"><td data-label="datumAb">30.10.2026</td><td data-label="datumBis">30.10.2026</td><td data-label="turnierbezeichnung">PRO Schulung</td><td data-label="ort">Online</td><td data-label="ausrichtenderVerein">RCA Bayreuth</td><td data-label="veranstalter">Oberfranken</td><td data-label="onlineMeldungAb">27.10.2026</td><td data-label="onlineMeldungBis">30.10.2026</td><td data-label="altersklassen">U10, U12, U14, U8</td><td data-label="stilarten">Freistil</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/27001">https://ringen.liga-db.de/de/Turniere/Detail/27001</a></td></tr><tr class="added"><td data-label="datumAb">07.11.2026</td><td data-label="datumBis">08.11.2026</td><td data-label="turnierbezeichnung">DM Weekend 2026</td><td data-label="ort">Herning</td><td data-label="ausrichtenderVerein">Herning BK</td><td data-label="veranstalter">Danmark</td><td data-label="onlineMeldungAb"></td><td data-label="onlineMeldungBis"></td><td data-label="altersklassen">Dr, KV, Pi, S/GR, U</td><td data-label="stilarten">Freistil, Gr.-röm.</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/26997">https://ringen.liga-db.de/de/Turniere/Detail/26997</a></td></tr><tr class="added"><td data-label="datumAb">07.11.2026</td><td data-label="datumBis">07.11.2026</td><td data-label="turnierbezeichnung">Itä-Suomen aluemestaruuskilpailut, vp</td><td data-label="ort">Lahti</td><td data-label="ausrichtenderVerein">Lahden Ahkera</td><td data-label="veranstalter">Finnland</td><td data-label="onlineMeldungAb"></td><td data-label="onlineMeldungBis"></td><td data-label="altersklassen">10, al, n, t13, tu11, tu17, tu9, u09, u11, u13, u17</td><td data-label="stilarten">Freistil</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/26999">https://ringen.liga-db.de/de/Turniere/Detail/26999</a></td></tr><tr class="added"><td data-label="datumAb">07.11.2026</td><td data-label="datumBis">07.11.2026</td><td data-label="turnierbezeichnung">XXVII. Int. Tournament of Olympic Hopes</td><td data-label="ort">ZK Kosice 1904</td><td data-label="ausrichtenderVerein">ZK Kosice 1904</td><td data-label="veranstalter">Slowakei</td><td data-label="onlineMeldungAb"></td><td data-label="onlineMeldungBis"></td><td data-label="altersklassen">U19</td><td data-label="stilarten">Freistil</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/27000">https://ringen.liga-db.de/de/Turniere/Detail/27000</a></td></tr><tr class="added"><td data-label="datumAb">17.04.2027</td><td data-label="datumBis">17.04.2027</td><td data-label="turnierbezeichnung">3. Zirndorfer Panthers Cup</td><td data-label="ort">Zirndorf</td><td data-label="ausrichtenderVerein">TSV Zirndorf</td><td data-label="veranstalter">Mittelfranken</td><td data-label="onlineMeldungAb">27.10.2026</td><td data-label="onlineMeldungBis">07.04.2027</td><td data-label="altersklassen">GR-U10, GR-U12, GR-U14, GR-U17, GR-U20, GR-U8</td><td data-label="stilarten">Gr.-röm.</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/26998">https://ringen.liga-db.de/de/Turniere/Detail/26998</a></td></tr></tbody></table>
+  </section>
+  <section>
+    <h2>Geänderte Turniere</h2>
+    <table><thead><tr><th>datumAb</th><th>datumBis</th><th>turnierbezeichnung</th><th>ort</th><th>ausrichtenderVerein</th><th>veranstalter</th><th>onlineMeldungAb</th><th>onlineMeldungBis</th><th>altersklassen</th><th>stilarten</th><th>anmeldelink</th></tr></thead><tbody><tr class="changed"><td data-label="datumAb">31.10.2026</td><td data-label="datumBis">01.11.2026</td><td data-label="turnierbezeichnung">Mälarcupen 2026</td><td data-label="ort">Västerås</td><td data-label="ausrichtenderVerein">Västerås BK</td><td data-label="veranstalter">Västmanlands BF</td><td data-label="onlineMeldungAb"></td><td data-label="onlineMeldungBis"></td><td data-label="altersklassen">GR, GR 11, GR 13, GR 15, GR 17, GR 9, WW, WW 11, WW 13, WW 15, WW 17, WW 9</td><td data-label="stilarten">Freistil, Gr.-röm.</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/26996">https://ringen.liga-db.de/de/Turniere/Detail/26996</a></td></tr></tbody></table>
+  </section>
+</body>
+</html>
