@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ringerdb - Tabellen-Änderungen</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; color: #1f2933; }
+    header { margin-bottom: 24px; }
+    a { color: #005a9c; }
+    .summary { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0; }
+    .pill { border: 1px solid #d8dde5; border-radius: 6px; padding: 8px 10px; }
+    section { margin-top: 28px; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th, td { border: 1px solid #d8dde5; padding: 8px 10px; vertical-align: top; text-align: left; }
+    th { background: #f4f6f8; font-weight: 700; }
+    td { overflow-wrap: anywhere; }
+    tr.added td { background: #e8f7ee; }
+    tr.changed td { background: #fff4cc; }
+    .empty { color: #697386; }
+    @media only screen and (max-width: 640px) {
+      body { margin: 12px; font-size: 16px; }
+      h1 { font-size: 22px; }
+      h2 { font-size: 19px; }
+      .summary { display: block; }
+      .pill { margin-bottom: 8px; }
+      table, tbody, tr, td { display: block; width: 100%; box-sizing: border-box; }
+      thead { display: none; }
+      table { border: 0; font-size: 15px; }
+      tr { border: 1px solid #d8dde5; border-radius: 8px; margin-bottom: 14px; overflow: hidden; }
+      td {
+        border: 0;
+        border-bottom: 1px solid #d8dde5;
+        display: grid;
+        grid-template-columns: minmax(105px, 36%) 1fr;
+        gap: 10px;
+        padding: 10px;
+      }
+      td:last-child { border-bottom: 0; }
+      td::before { content: attr(data-label); font-weight: 700; text-decoration: none; }
+      a { overflow-wrap: anywhere; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ringerdb</h1>
+    <p><a href="https://turniere.ringerdb.de/zukunft">https://turniere.ringerdb.de/zukunft</a></p>
+    <p>Geprüft am 2026-11-01 23:31:58</p>
+    <div class="summary">
+      <div class="pill">Neue Turniere: 5</div>
+      <div class="pill">Geänderte Turniere: 0</div>
+    </div>
+  </header>
+  <section>
+    <h2>Neue Turniere</h2>
+    <table><thead><tr><th>datumAb</th><th>datumBis</th><th>turnierbezeichnung</th><th>ort</th><th>ausrichtenderVerein</th><th>veranstalter</th><th>onlineMeldungAb</th><th>onlineMeldungBis</th><th>altersklassen</th><th>stilarten</th><th>anmeldelink</th></tr></thead><tbody><tr class="added"><td data-label="datumAb">23.01.2027</td><td data-label="datumBis">23.01.2027</td><td data-label="turnierbezeichnung">Pfalz Meisterschaft Gr.röm</td><td data-label="ort">Ramstein-Miesenbach</td><td data-label="ausrichtenderVerein">1. RSV Kaiserslautern</td><td data-label="veranstalter">Pfalz</td><td data-label="onlineMeldungAb"></td><td data-label="onlineMeldungBis"></td><td data-label="altersklassen">Freundschaftskämpfe, U-10, U-12, U-14, U-17, U8</td><td data-label="stilarten">Gr.-röm.</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/27010">https://ringen.liga-db.de/de/Turniere/Detail/27010</a></td></tr><tr class="added"><td data-label="datumAb">30.01.2027</td><td data-label="datumBis">30.01.2027</td><td data-label="turnierbezeichnung">Pfalz Meisterschaft Freistil</td><td data-label="ort">Thaleischweiler-Fröschen</td><td data-label="ausrichtenderVerein">AC Thaleischweiler</td><td data-label="veranstalter">Pfalz</td><td data-label="onlineMeldungAb"></td><td data-label="onlineMeldungBis"></td><td data-label="altersklassen">Freundschaftskämpfe, U-10, U-12, U-14, U-17, U-20, U-8, WU-14, WU-17</td><td data-label="stilarten">Freistil</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/27011">https://ringen.liga-db.de/de/Turniere/Detail/27011</a></td></tr><tr class="added"><td data-label="datumAb">15.05.2027</td><td data-label="datumBis">15.05.2027</td><td data-label="turnierbezeichnung">2. intern. Pfingst-Turnier 2026 weibl. Jugend</td><td data-label="ort">Gersweiler</td><td data-label="ausrichtenderVerein">RG Saarbrücken</td><td data-label="veranstalter">Saarland</td><td data-label="onlineMeldungAb"></td><td data-label="onlineMeldungBis"></td><td data-label="altersklassen">U10, U12, U14, U17, U20F, U8</td><td data-label="stilarten">Freistil</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/27014">https://ringen.liga-db.de/de/Turniere/Detail/27014</a></td></tr><tr class="added"><td data-label="datumAb">16.05.2027</td><td data-label="datumBis">16.05.2027</td><td data-label="turnierbezeichnung">50. intern. -Horst Hoppe- Pfingst-Turnier 2026</td><td data-label="ort">Gersweiler</td><td data-label="ausrichtenderVerein">RG Saarbrücken</td><td data-label="veranstalter">Saarland</td><td data-label="onlineMeldungAb"></td><td data-label="onlineMeldungBis"></td><td data-label="altersklassen">U10, U12, U14, U17, U8</td><td data-label="stilarten">Freistil</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/27013">https://ringen.liga-db.de/de/Turniere/Detail/27013</a></td></tr><tr class="added"><td data-label="datumAb">30.05.2027</td><td data-label="datumBis">30.05.2027</td><td data-label="turnierbezeichnung">28. Hermann Schwindling Gedächtnisturnier</td><td data-label="ort">Riegelsberg</td><td data-label="ausrichtenderVerein">KV Riegelsberg</td><td data-label="veranstalter">Saarland</td><td data-label="onlineMeldungAb"></td><td data-label="onlineMeldungBis"></td><td data-label="altersklassen">U10, U12, U14, U17, U8, w U14, wU17</td><td data-label="stilarten">Freistil, Gr.-röm.</td><td data-label="anmeldelink"><a href="https://ringen.liga-db.de/de/Turniere/Detail/27009">https://ringen.liga-db.de/de/Turniere/Detail/27009</a></td></tr></tbody></table>
+  </section>
+  <section>
+    <h2>Geänderte Turniere</h2>
+    <p class="empty">Keine Einträge.</p>
+  </section>
+</body>
+</html>
