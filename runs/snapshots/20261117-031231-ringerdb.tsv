@@ -1,11 +1,10 @@
 datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineMeldungAb	onlineMeldungBis	altersklassen	stilarten	anmeldelink
-15.11.2026	15.11.2026	Anfängerturnier Freistil Schlichten 2026	Schlichten	ASV Schlichten	Württemberg	11.09.2026	12.11.2026	Freundschaftskämpfe, U10, U12, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/25899
-15.11.2026	15.11.2026	Goldstadtpokal	Pforzheim	SV 98 Brötzingen	Nordbaden			U10, U12, U14, U17, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/27036
 21.11.2026	21.11.2026	Kolbotn Cup 2026	Langhus	Kolbotn IL	Oslo Akershus BK			G12, G5, H20, J12, J15, K20, U17	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25970
-21.11.2026	21.11.2026	DM Skåne 2026	Trelleborg	BK Starke	Skånes BF			GR11, GR13, GR15, GR17, GR9, WW11, WW13, WW15, WW17, WW9	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25985
+21.11.2026	21.11.2026	DM Skåne 2026	Trelleborg	BK Starke	Skånes BF			FS15, FS17, FS_SM, GR15, GR17, GR_SM, WW15, WW17, WW_SM	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25985
 21.11.2026	21.11.2026	Joulumaapainit	Rovaniemi	Lapin Lukko	Finnland			AP, AT, P11, P13, P15, P17, P20, T11, T13, T15, T17	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/27030
 21.11.2026	21.11.2026	Venne Cup 2026	Sportscenter Herning	Herning Brydeklub	Dänemark			Dr, KV, Pi, Pu, UJ	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/27033
 21.11.2026	21.11.2026	OP Keski-Suomi painiturnaus	Vaajakoski	Vaajakosken Kuohu	Finnland			U11FS, U11WW, U13FS, U13WW, U15FS, U17GR, U17WW, U20GR, U20WW	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/27035
+21.11.2026	21.11.2026	23. Tapa maadluspäev	Tapa	SK Tapa	SK Tapa			Naistemaadlus, TK, Tüdrukud, U17 2009->	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/27042
 22.11.2026	22.11.2026	30. Georg Grehmann Gedächtnis Turnier	Schwäbisch Hall	ASV Schwäbisch Hall	Württemberg			U 8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24574
 22.11.2026	22.11.2026	22. Nationales Odenwaldpokalturnier	Rimbach	KSV Rimbach	Hessen			U 10, U 12, U 14, U 17, U 8	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25897
 22.11.2026	22.11.2026	Kävlinge/Furulunds nybörjartävling	Kävlinge 	Kävlinge Furulunds BK	Skånes BF			GR, WW	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25958
@@ -21,6 +20,8 @@ datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineM
 06.12.2026	06.12.2026	Anfängerturnier Dieburg	Dieburg	ASV Dieburg	Hessen	06.11.2026	29.11.2026	U 12, U 14, Ü 14	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24846
 11.12.2026	13.12.2026	Helsinki Open Wrestling Tournament 2026	Helsinki	Helsingin Paini-Miehet (HPM)	Finnland			FS U11 BOYS, FS U13 BOYS, FS U15 BOYS, FS U17 BOYS, FS U17+, FS U9 BOYS AND GIRLS, WW U11 GIRLS, WW U14 GIRLS, WW U17 GIRLS, WW U17+	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24825
 12.12.2026	12.12.2026	36. Weihnachtsturnier des SAV Torgelow	17358 Torgelow	SAV Torgelow	Mecklenburg-Vorpommern	21.09.2026	04.12.2026	U-10, U-12, U-8	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25908
+15.12.2026	15.12.2026	Andreas Walter Turnier Test	Unterföhring	SC Isaria Unterföhring e.V.	Oberbayern	15.11.2026	18.11.2026	Frauen, Freundschaftskämpfe, GR-Frauen, GR-Männer, GR-U10, GR-U12, GR-U14, GR-U17, GR-U20, GR-U8, Männer, U10, U12, U14, U17, U23, U8, W-U12, W-U14, W-U17, W-U20	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25959
+16.12.2026	16.12.2026	Andreas Walter Turnier Test2	Unterföhring	SC Isaria Unterföhring e.V.	Oberbayern			Freundschaftskämpfe, U10, U12, U14, U17, U23, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/27038
 20.12.2026	20.12.2026	Testtunier BS	TODO	RCA Bayreuth	Oberfranken			U10, U12, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/25925
 24.12.2026	24.12.2026	Testturnier AB (2)	TODO	RCA Bayreuth	Oberfranken			Freundschaftskämpfe, U12, U20, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/25919
 27.12.2026	27.12.2026	Test AB + KA	Blub	RCA Bayreuth	Oberfranken	07.09.2026	10.09.2026	Frauen, Freundschaftskämpfe, GR-Frauen, GR-Männer, GR-U10, GR-U12, GR-U14, GR-U17, GR-U20, GR-U8, Männer, U10, U12, U14, U17, U20, U8, W-U12, W-U14, W-U17, W-U20	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25896
@@ -50,8 +51,10 @@ datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineM
 23.01.2027	23.01.2027	Landesmeisterschaft Jugend U8, U12	Völklingen	KSV Fürstenhausen	Saarland	01.12.2026	19.01.2027	U12, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/25963
 23.01.2027	23.01.2027	Pfalz Meisterschaft Gr.röm	Ramstein-Miesenbach	1. RSV Kaiserslautern	Pfalz			Freundschaftskämpfe, U-10, U-12, U-14, U-17, U8	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/27010
 23.01.2027	23.01.2027	Offene  Berliner Meisterschaften 2027 weiblich	Berlin	SV Preußen Berlin	Berlin	04.11.2026	15.01.2027	F, Weiblich U12, Weiblich U14, Weiblich U9	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/27019
+23.01.2027	23.01.2027	Bezirksmeisterschaften Bez. 3 Jugend Freistil	Röhlingen	AC Röhlingen	Württemberg	23.11.2026	13.01.2027	U10, U12, U14, U17, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/27039
 24.01.2027	24.01.2027	Landesmeisterschaft Jugend U10, U14, U17	Völklingen	KSV Fürstenhausen	Saarland	01.12.2026	20.10.2026	U10, U14, U17	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/25964
 30.01.2027	30.01.2027	Pfalz Meisterschaft Freistil	Thaleischweiler-Fröschen	AC Thaleischweiler	Pfalz			Freundschaftskämpfe, U-10, U-12, U-14, U-17, U-20, U-8, WU-14, WU-17	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/27011
+31.01.2027	31.01.2027	Bezirksmeisterschaften Bez. 3 Jugend Greco	Bellenberg	ASV Bellenberg	Württemberg	30.11.2026	21.01.2027	Fehler beim Laden: HTTP Error 404: Not Found		https://ringen.liga-db.de/de/Turniere/Detail/27040
 17.02.2027	17.02.2027	Schulmeisterschaften 2027	Heusweiler	AC Heusweiler	Saarland			1+2M, 1+2o, 3+4M, 3+4o	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/27006
 20.02.2027	20.02.2027	Landesmeisterschaft Jugend U8, U12	Schiffweiler	ASV Hüttigweiler	Saarland	01.12.2026	16.02.2027	U12, U8	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25975
 20.02.2027	20.02.2027	Rheinland Pfalz Meisterschaft Freistil	Bad Kreuznach	VfL Bad Kreuznach	ARGE Rheinlandpfalz	11.11.2026	09.02.2027	Freundschaftskämpfe, U 10, U 12, U 14, U 17, U 8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/27032
@@ -60,6 +63,7 @@ datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineM
 27.02.2027	27.02.2027	22. offene LM  Männer gr.-röm u. Freistil	Riegelsberg	KV Riegelsberg	Saarland			MF, MG	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/24844
 20.03.2027	20.03.2027	Wittelsbacher Land Turnier 2027	Aichach	TSV Aichach	Bayern	01.06.2026	14.03.2027	Frauen, Freundschaftskämpfe, GR-Frauen, GR-Männer, GR-U10, GR-U12, GR-U14, GR-U17, GR-U20, GR-U8, Männer, U10, U12, U14, U17, U20, U8, W-U12, W-U14, W-U17, W-U20	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/24819
 27.03.2027	27.03.2027	45. Int. Andi-Walter-Gedächtnisturnier	85774 Unterföhring	SC Isaria Unterföhring e.V.	Bayern			Freundschaftskämpfe, U10, U12, U14, U17, U23, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/27029
+11.04.2027	11.04.2027	35. Int. Eugen-Roller-Gedächtnisturnier	Herbrechtingen	TSV Herbrechtingen	Württemberg	01.01.2027	01.04.2027	U10, U12, U14, U8	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/27041
 17.04.2027	17.04.2027	3. Zirndorfer Panthers Cup	Zirndorf	TSV Zirndorf	Mittelfranken	27.10.2026	07.04.2027	GR-U10, GR-U12, GR-U14, GR-U17, GR-U20, GR-U8	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/26998
 15.05.2027	15.05.2027	2. intern. Pfingst-Turnier 2026 weibl. Jugend	Gersweiler	RG Saarbrücken	Saarland			U10, U12, U14, U17, U20F, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/27014
 16.05.2027	16.05.2027	50. intern. -Horst Hoppe- Pfingst-Turnier 2026	Gersweiler	RG Saarbrücken	Saarland			U10, U12, U14, U17, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/27013
@@ -71,4 +75,3 @@ datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineM
 01.11.2027	01.11.2027	Rauch Testturnier	TODO	1. AC Regensburg	Niederbayern/Oberpfalz	15.06.2026	30.11.2026	Frauen, Freundschaftskämpfe, GR-Frauen, GR-Männer, GR-U10, GR-U12, GR-U14, GR-U17, GR-U20, GR-U8, U10, U17, U20, U8, W-U12, W-U14, W-U17, W-U20	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/24818
 31.12.2027	31.12.2027	AB-Testturnier	Bayreuth	RCA Bayreuth	Bayern	01.01.2025	31.12.2026	F-U10, F-U12, F-U14, F-U17, F-U8, F-WJ, F-WS, FK, G-U12, G-U14, G-U17	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/24271
 31.12.2027	31.12.2027	Testturnier in Freising	TODO	SpVgg Freising	Oberbayern	10.06.2026	30.06.2026	Frauen, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24814
-31.12.2027	31.12.2027	Vorlage Poolsystem 2027 (alle AKs)	TODO	RCA Bayreuth	Oberfranken			Frauen, Freundschaftskämpfe, GR-Frauen, GR-Männer, GR-U10, GR-U12, GR-U14, GR-U17, GR-U20, GR-U8, Männer, U10, U12, U14, U17, U20, U8, W-U12, W-U14, W-U17, W-U20	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25959
