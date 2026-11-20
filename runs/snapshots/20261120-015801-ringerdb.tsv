@@ -1,8 +1,8 @@
 datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineMeldungAb	onlineMeldungBis	altersklassen	stilarten	anmeldelink
 21.11.2026	21.11.2026	Kolbotn Cup 2026	Langhus	Kolbotn IL	Oslo Akershus BK			G12, G5, H20, J12, J15, K20, U17	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25970
-21.11.2026	21.11.2026	DM Skåne 2026	Trelleborg	BK Starke	Skånes BF			FS15, FS17, FS_SM, GR15, GR17, GR_SM, WW15, WW17, WW_SM	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25985
+21.11.2026	21.11.2026	DM Skåne 2026	Trelleborg	BK Starke	Skånes BF			FS, FS15, FS17, GR, GR15, GR17, WW, WW15, WW17	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25985
 21.11.2026	21.11.2026	Joulumaapainit	Rovaniemi	Lapin Lukko	Finnland			AP, AT, P11, P13, P15, P17, P20, T11, T13, T15, T17	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/27030
-21.11.2026	21.11.2026	Venne Cup 2026	Sportscenter Herning	Herning Brydeklub	Dänemark			Dr, KV, Pi, Pu, UJ	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/27033
+21.11.2026	21.11.2026	Venne Cup 2026	Sportscenter Herning	Herning Brydeklub	Dänemark			KV, P2, P3, U14, U20, UJ, WW	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/27033
 21.11.2026	21.11.2026	OP Keski-Suomi painiturnaus	Vaajakoski	Vaajakosken Kuohu	Finnland			U11FS, U11WW, U13FS, U13WW, U15FS, U17GR, U17WW, U20GR, U20WW	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/27035
 21.11.2026	21.11.2026	23. Tapa maadluspäev	Tapa	SK Tapa	SK Tapa			Naistemaadlus, TK, Tüdrukud, U17 2009->	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/27042
 22.11.2026	22.11.2026	30. Georg Grehmann Gedächtnis Turnier	Schwäbisch Hall	ASV Schwäbisch Hall	Württemberg			U 8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24574
@@ -39,6 +39,7 @@ datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineM
 21.02.2027	21.02.2027	Offene Rheinland Pfalz Meisterschaft Weibl.	Bad Kreuznach	VfL Bad Kreuznach	ARGE Rheinlandpfalz			Freundschaftskämpfe, U 10, U 12, U 14, U 17, U23, U23 Gr.-röm.	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/27034
 27.02.2027	27.02.2027	22. offene LM  Männer gr.-röm u. Freistil	Riegelsberg	KV Riegelsberg	Saarland			MF, MG	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/24844
 27.03.2027	27.03.2027	45. Int. Andi-Walter-Gedächtnisturnier	85774 Unterföhring	SC Isaria Unterföhring e.V.	Bayern			Freundschaftskämpfe, U10, U12, U14, U17, U23, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/27029
+27.03.2027	27.03.2027	11. Marco Bender Gedächtnisturnier	Östringen	KSV Östringen	Nordbaden			U 12, U 14, U10, U17, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/27044
 11.04.2027	11.04.2027	35. Int. Eugen-Roller-Gedächtnisturnier	Herbrechtingen	TSV Herbrechtingen	Württemberg	01.01.2027	01.04.2027	U10, U12, U14, U8	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/27041
 17.04.2027	17.04.2027	3. Zirndorfer Panthers Cup	Zirndorf	TSV Zirndorf	Mittelfranken	27.10.2026	07.04.2027	GR-U10, GR-U12, GR-U14, GR-U17, GR-U20, GR-U8	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/26998
 15.05.2027	15.05.2027	2. intern. Pfingst-Turnier 2026 weibl. Jugend	Gersweiler	RG Saarbrücken	Saarland			U10, U12, U14, U17, U20F, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/27014
