@@ -1,9 +1,4 @@
 datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineMeldungAb	onlineMeldungBis	altersklassen	stilarten	anmeldelink
-22.11.2026	22.11.2026	30. Georg Grehmann Gedächtnis Turnier	Schwäbisch Hall	ASV Schwäbisch Hall	Württemberg			U 8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24574
-22.11.2026	22.11.2026	22. Nationales Odenwaldpokalturnier	Rimbach	KSV Rimbach	Hessen			U 10, U 12, U 14, U 17, U 8	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25897
-22.11.2026	22.11.2026	Kävlinge/Furulunds nybörjartävling	Kävlinge 	Kävlinge Furulunds BK	Skånes BF			GR, WW	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25958
-22.11.2026	22.11.2026	SNK Trelleborg 2026	Trelleborg	BK Starke	Skånes BF			GR11, GR13, GR15, GR9, Mkn, WW11, WW13, WW17, WW9	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25986
-22.11.2026	22.11.2026	Kolbotn Cup  Mini	Langhus	Kolbotn IL	Oslo Akershus BK			BG, BP, KG, KP, NK, NP	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/27043
 28.11.2026	29.11.2026	SM KILPAILUT U17 / Miehet / U20 naiset VP	Rauma	Ilmajoen Kisailijat	Finnland			F1, F2, W1, W2	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/26993
 28.11.2026	28.11.2026	29. Dieter Allmrodt Gedächtnisturnier	Waltershausen	ZSG Waltershausen	Thüringen			EJ, U10	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/27016
 05.12.2026	05.12.2026	3. Offenes Fun-Turnier 2026	Heusweiler	AC Heusweiler	Saarland			AK1, AK2, AK3	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24842
@@ -12,6 +7,7 @@ datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineM
 05.12.2026	05.12.2026	Arvo Haavisto Tournament	Ilmajoki	Ilmajoen Kisailijat	Finnland			GR	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/27037
 06.12.2026	06.12.2026	23. Herbert Link Gedächtnisturnier	Lauffen am Neckar	KSV Lauffen	Württemberg			U 10, U 12, U 14, U 8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24573
 06.12.2026	06.12.2026	Anfängerturnier Dieburg	Dieburg	ASV Dieburg	Hessen	06.11.2026	29.11.2026	U 12, U 14, Ü 14	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24846
+06.12.2026	06.12.2026	Oberösterr. Landesm. SchülerInnen A+B	4600 Wels, Gutenbergstrasse 5	Oberösterreichischer Ringsportverband	Österreich			Schüler A, Schüler B, Schülerinnen A, Schülerinnen B	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/27050
 11.12.2026	13.12.2026	Helsinki Open Wrestling Tournament 2026	Helsinki	Helsingin Paini-Miehet (HPM)	Finnland			FS U11 BOYS, FS U13 BOYS, FS U15 BOYS, FS U17 BOYS, FS U17+, FS U9 BOYS AND GIRLS, WW U11 GIRLS, WW U14 GIRLS, WW U17 GIRLS, WW U17+	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/24825
 12.12.2026	12.12.2026	36. Weihnachtsturnier des SAV Torgelow	17358 Torgelow	SAV Torgelow	Mecklenburg-Vorpommern	21.09.2026	04.12.2026	U-10, U-12, U-8	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25908
 15.12.2026	15.12.2026	Andreas Walter Turnier Test	Unterföhring	SC Isaria Unterföhring e.V.	Oberbayern	15.11.2026	18.11.2026	Frauen, Freundschaftskämpfe, GR-Frauen, GR-Männer, GR-U10, GR-U12, GR-U14, GR-U17, GR-U20, GR-U8, Männer, U10, U12, U14, U17, U23, U8, W-U12, W-U14, W-U17, W-U20	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/25959
@@ -38,6 +34,7 @@ datumAb	datumBis	turnierbezeichnung	ort	ausrichtenderVerein	veranstalter	onlineM
 27.03.2027	27.03.2027	11. Marco Bender Gedächtnisturnier	Östringen	KSV Östringen	Nordbaden			U 12, U 14, U10, U17, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/27044
 11.04.2027	11.04.2027	35. Int. Eugen-Roller-Gedächtnisturnier	Herbrechtingen	TSV Herbrechtingen	Württemberg	01.01.2027	01.04.2027	U10, U12, U14, U8	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/27041
 17.04.2027	17.04.2027	3. Zirndorfer Panthers Cup	Zirndorf	TSV Zirndorf	Mittelfranken	27.10.2026	07.04.2027	GR-U10, GR-U12, GR-U14, GR-U17, GR-U20, GR-U8	Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/26998
+17.04.2027	17.04.2027	42. Internationales Jugendturnier 2027	Pirmasens	RSC Pirmasens Fehrbach	Pfalz			U-10, U-12, U-14, U-17, U-8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/27049
 15.05.2027	15.05.2027	2. intern. Pfingst-Turnier 2026 weibl. Jugend	Gersweiler	RG Saarbrücken	Saarland			U10, U12, U14, U17, U20F, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/27014
 16.05.2027	16.05.2027	50. intern. -Horst Hoppe- Pfingst-Turnier 2026	Gersweiler	RG Saarbrücken	Saarland			U10, U12, U14, U17, U8	Freistil	https://ringen.liga-db.de/de/Turniere/Detail/27013
 30.05.2027	30.05.2027	28. Hermann Schwindling Gedächtnisturnier	Riegelsberg	KV Riegelsberg	Saarland			U10, U12, U14, U17, U8, w U14, wU17	Freistil, Gr.-röm.	https://ringen.liga-db.de/de/Turniere/Detail/27009
